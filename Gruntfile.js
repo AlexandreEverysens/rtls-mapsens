@@ -224,7 +224,7 @@ module.exports = function (grunt) {
         src: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
         ignorePath: /(\.\.\/){1,2}bower_components\//
       }
-    }, 
+    },
 
     // Compiles Sass to CSS and generates necessary files if requested
     compass: {
@@ -302,32 +302,6 @@ module.exports = function (grunt) {
         }
       }
     },
-
-    // The following *-min tasks will produce minified files in the dist folder
-    // By default, your `index.html`'s <!-- Usemin block --> will take care of
-    // minification. These next options are pre-configured if you do not wish
-    // to use the Usemin blocks.
-    // cssmin: {
-    //   dist: {
-    //     files: {
-    //       '<%= yeoman.dist %>/styles/main.css': [
-    //         '.tmp/styles/{,*/}*.css'
-    //       ]
-    //     }
-    //   }
-    // },
-    // uglify: {
-    //   dist: {
-    //     files: {
-    //       '<%= yeoman.dist %>/scripts/scripts.js': [
-    //         '<%= yeoman.dist %>/scripts/scripts.js'
-    //       ]
-    //     }
-    //   }
-    // },
-    // concat: {
-    //   dist: {}
-    // },
 
     imagemin: {
       dist: {
@@ -455,6 +429,17 @@ module.exports = function (grunt) {
   });
 
 
+  grunt.registerTask('serve-dist', 'Compile as dist then start a connect web server', function (target) {
+    if (!target) {
+      target = 'development';
+    }
+
+    return grunt.task.run([
+      'build:' + target,
+      'connect:dist:keepalive'
+    ]);
+  });
+
   grunt.registerTask('serve', 'Compile then start a connect web server', function (target) {
     if (target === 'dist') {
       return grunt.task.run(['build', 'connect:dist:keepalive']);
@@ -502,10 +487,14 @@ module.exports = function (grunt) {
     'htmlmin'
   ]);
 
+  grunt.registerTask('dev-dist', ['serve-dist:local']);
+
+  grunt.registerTask('dev', ['serve:local']);
+
   grunt.registerTask('default', [
-    'newer:jshint',
+/*    'newer:jshint',
     'newer:jscs',
-    'test',
+    'test',*/
     'build'
   ]);
 };

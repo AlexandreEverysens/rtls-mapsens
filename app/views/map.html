@@ -1,0 +1,29 @@
+<div class="map well">
+
+  <div class="map__wrapper">
+
+    <!--     <div ng-controller="MapSearchBoxCtrl">
+  <!--     <div class="map__searchbox" ng-class="{'hiding': !searchbox.show()}">
+           <ng-include src="'views/directives/searchbox/mapSearchBox.html'"></ng-include>
+         </div>
+
+    </div>
+
+
+    <ng-include src="'views/directives/map/pageSidebar.html'"></ng-include>
+  -->
+
+    <!-- map -->
+    <div class="map__content">
+      <leaflet lf-center="map.center"
+               defaults="map.defaults"
+               markers="map.markers"
+               layers="map.layers"
+               controlsX="map.controls"
+               paths="map.paths"
+               height="100%"
+               decorationsX="map.decorations"></leaflet>
+    </div>
+  </div>
+</div>
+
