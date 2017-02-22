@@ -6,10 +6,10 @@
 
 /**
  * @ngdoc service
- * @name rtlsApp.service:leafletService
+ * @name rtlsMapsensApp.service:leafletService
  * @description
  * # leafletService
- * Service in the rtlsApp.
+ * Service in the rtlsMapsensApp.
  */
 angular.module('rtlsMapsensApp')
   .service('leafletService', function ($timeout, leafletPathsHelpers, leafletMapDefaults, leafletData, severityService) {

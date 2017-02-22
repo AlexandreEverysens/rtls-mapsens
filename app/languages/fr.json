@@ -1,0 +1,491 @@
+{
+   "app" : {
+      "error" : {
+         "service" : "Le service est temporairement inaccessible."
+      }
+   },
+   "login" : {
+      "title": "Bonjour.",
+      "subtitle": "Veuillez vous identifier.",
+      "username": "Utilisateur",
+      "password": "Mot de passe",
+      "submit": "Connexion",
+      "error" : {
+         "username": "Le format n'est pas valide.",
+         "password": "Le format n'est pas valide.",
+         "mustLogin": "Veuillez saisir des identifiants valides."
+      }
+   },
+   "layout": {
+      "navbar": {
+         "title": "RTLS",
+         "menu": {
+            "home": "Dashboard",
+            "map": "Carte",
+            "things": "Objets",
+            "locations": "Zones",
+            "tags": "Capteurs",
+            "stats": "Statistiques",
+            "equipments": "Parc"
+         },
+         "dropdown": {
+            "account":"Compte",
+            "settings":"Paramètres",
+            "userprofile":"Utilisateur",
+            "logout":"Déconnexion"
+         }
+      },
+      "footerbar": {
+         "madewithlove": "<i class=\"fa fa-code\"></i> avec soin par <a href=\"http://www.everysens.com/\" class=\"footer-link\" target=\"_blank\">Everysens</a>"
+      }
+   },
+   "map": {
+      "controls": {
+         "fit": "Zoom auto",
+         "layers": "Calques"
+      },
+      "sidebar": {
+         "layerrows": {
+            "buttons": {
+               "filterspopup": "Filtres",
+               "clearfilterspopup": "Réinitialiser filtres",
+               "fit": "Zoom auto",
+               "checkboxHasProblem": "Afficher les problèmes"
+            },
+            "things": "Objets",
+            "locations": "Zones"
+         },
+         "bottombuttonbar": {
+            "ok": "Valider"
+         },
+         "action": {
+            "search": "Rechercher...",
+            "clear": "Vider",
+            "filter": "Filtrer"
+         },
+         "historic": "Intervalle d'historique"
+      },
+      "popup": {
+         "filters": "Filtres",
+         "problems": "Problèmes",
+         "actions": "Actions",
+         "currently": "Actuellement à",
+         "lately": "Dernièrement à",
+         "thing": {
+            "informations": "Informations",
+            "groups": "Groupes",
+            "located": "Localisé",
+            "activity": "Activité",
+            "details": "Voir dans le tableau",
+            "historyShow": "Voir historique",
+            "historyHide": "Masquer historique"
+         },
+         "location": {
+            "title": "Zone"
+         }
+      },
+      "searchbox": {
+         "bin": "Vider tous les éléments",
+         "zoom": "Voir tous les éléments",
+         "streets": "Vue satellite",
+         "satellite": "Vue plan",
+         "options": "Options",
+         "placeholder": "Rechercher",
+         "message" :{
+            "noMatch": "Aucune correspondance trouvée"
+         }
+      },
+      "errors": {
+      }
+   },
+   "things": {
+      "title": "Objets",
+      "empty": "Aucun object à afficher",
+      "withProblems" : "Objets avec problèmes",
+      "errors": {
+         "failedFetchingThings": "Téléchargement des objets impossible",
+         "failedfetchinglocations": "Téléchargement des zones impossible"
+      },
+      "table": {
+         "headers": {
+            "name": "Nom",
+            "group": "Groupe",
+            "lastKnownPosition": "Dernière position connue",
+            "lastSensorActivity": "Dernière activité du capteur",
+            "sensor": "Capteur",
+            "location": "Zone",
+            "problems": "Problème(s)",
+            "actions": "Actions"
+         },
+         "actions": "Voir sur la carte",
+         "placeholders": {
+            "search": "Rechercher..."
+         }
+      }
+   },
+   "locations": {
+      "title": "Zones",
+      "empty": "Aucune zone à afficher",
+      "withProblems" : "Zones avec problèmes",
+      "errors": {
+         "failedFetchingLocations": "Téléchargement des zones impossible"
+      },
+      "table": {
+         "headers": {
+            "name": "Nom",
+            "thingscount": "Objets",
+            "filters": "Filtres",
+            "problems": "Problèmes en cours",
+            "actions": "Actions"
+         },
+         "actions": "Voir sur la carte",
+         "placeholders": {
+            "search": "Rechercher..."
+         }
+      },
+      "map": {
+         "popup": {
+            "showRegions" : "Afficher les régions",
+            "hideRegions" : "Masques les régions",
+            "viewObjectsIn" : "Voir les objets dans cette zone"
+         }
+      }
+   },
+   "tags": {
+      "title": "capteurs",
+      "empty": "Aucun capteur à afficher",
+      "errors": {
+         "failedFetchingTags": "Téléchargement des tags impossible"
+      },
+      "table": {
+         "headers": {
+            "id": "Identifiant",
+            "state": "Etat",
+            "thing": "Objet",
+            "dateLastActivity": "Dernière activité",
+            "version": "Version",
+            "problems": "Problèmes en cours"
+         },
+         "placeholders": {
+            "search": "Rechercher..."
+         }
+      },
+      "wakeReason": {
+         "title": "Message",
+         "UNKNOWN": "Inconnu",
+         "LIFE": "Vie",
+         "EVENT": "Evenement",
+         "BOOT": "Initialisation",
+         "LIFE_INIT": "Life init",
+         "EVENT_INIT": "Event init",
+         "GPS_OK": "GPS Ok",
+         "KEEP_ALIVE": "Keep alive",
+         "GPS_FAILED": "GPS échec",
+         "GPS_OLD": "GPS périmé",
+         "START": "Départ",
+         "STOP": "Arrêt",
+         "MOVE": "Mouvement"
+      }
+   },
+   "dashboard": {
+      "RealTimeProblemsExplorer":"Explorateur de problèmes en temps réel",
+      "businessProblem": "Problèmes métier",
+      "systemProblem": "Problèmes capteurs",
+      "things": "Cliquez ici pour avoir la liste de vos objets",
+      "locations": "Cliquez ici pour avoir la liste de vos zones",
+      "tags": "Cliquez ici pour avoir la liste de vos capteurs",
+      "problem": "problèmes",
+      "consult": "Consulter",
+      "loss": "Perte",
+      "unit": "Unités",
+      "problemType": {
+         "RETENTION": "Rétention",
+         "COUNTING": "Comptage",
+         "UNAUTHORIZED_MOVEMENT": "Mouvement non autorisé",
+         "OUT_OF_NETWORK": "Hors réseau",
+         "NO_DEVICE_SIGNAL": "Pas de signal",
+         "LOW_DEVICE_BATTERY": "Batterie faible"
+      }
+   },
+   "equipment": {
+      "things": "Objets",
+      "locations": "Zones",
+      "tags": "Capteurs",
+      "back": "Retour",
+      "modal": {
+         "title": "Problème(s) avec ",
+         "type": "Problème",
+         "date": "Date",
+         "description": "Description",
+         "solved": "Résolu",
+         "message": {
+            "step1": "Un problème de mouvement avec l'objet ",
+            "step2": " a été résolu.",
+            "error": "Un problème est survenu"
+         },
+         "buttons": {
+            "solve": "Résoudre",
+            "close": "Fermer"
+         }
+      },
+      "paging":{
+         "itemByPage": "Lignes par page : ",
+         "numPage": "Classées sur ",
+         "goTo": "aller à la page : ",
+         "all": "voir tous"
+      },
+      "modalThingsInZone": {
+         "title": "Objet(s) dans la zone",
+         "thing": "Objet",
+         "thingGroup": "Groupe",
+         "clipboard": "Copie dans le presse-papier"
+      }
+   },
+   "stat": {
+      "yAxis": "Nombre de problème(s)",
+      "filtred": "filtré par :",
+      "dayFilter": "Jours",
+      "weekFilter": "Semaines",
+      "monthFilter": "Mois",
+      "yearFilter": "Années",
+      "problem": "Problème(s)",
+      "modal": {
+         "title": "Détail des problèmes entre le {{intervalStart}} et le {{intervalEnd}}",
+         "type": "Problème",
+         "date": "Date",
+         "thing": "Objet (groupe)",
+         "location": "Zone",
+         "tag": "Capteur",
+         "buttons": {
+            "close": "Fermer"
+         }
+      },
+      "errors": {
+         "details": "Une erreur est survenue lors du chargement des problèmes"
+      }
+   },
+   "problemType": {
+      "RETENTION": "Retention",
+      "COUNTING": "Comptage",
+      "UNAUTHORIZED_MOVEMENT": "Mouvement non autorisé",
+      "OUT_OF_NETWORK": "Hors zones",
+      "NO_DEVICE_SIGNAL": "Perte de signal",
+      "LOW_DEVICE_BATTERY": "Batterie faible"
+   },
+   "problem":{
+      "timeUnit": {
+         "MINUTES": " minutes ",
+         "HOURS":" heures ",
+         "DAYS":" jours "
+      },
+      "NO_DEVICE_SIGNAL": {
+         "step1": "Le capteur ",
+         "step2": " de l'objet ",
+         "step3": " n'envoie plus de signal depuis "
+      },
+      "LOW_DEVICE_BATTERY": {
+         "step1": "Le capteur ",
+         "step2": " de l'objet ",
+         "step3": " est en batterie faible depuis "
+      },
+      "COUNTING":{
+         "GREATER_THAN":{
+            "step1": "Il y a plus que ",
+            "step1bis": ""
+         },
+         "LOWER_THAN":{
+            "step1": "Il y a moins de ",
+            "step1bis": ""
+         },
+         "EQUAL":{
+            "step1": "Il y a exactement ",
+            "step1bis": ""
+         },
+         "NOT_BETWEEN":{
+            "step1": "Il n'y a pas entre ",
+            "step1bis": " et "
+         },
+         "NOT_EQUAL":{
+            "step1": "Il n'y a pas ",
+            "step1bis": ""
+         },
+         "step2": " objets du groupe ",
+         "step3": " dans la zone "
+      },
+      "UNAUTHORIZED_MOVEMENT": {
+         "step1": "L'objet ",
+         "step2": " du groupe ",
+         "step3": " a été déplacé le "
+      },
+      "RETENTION": {
+         "step1": "L'objet ",
+         "step2": " du groupe ",
+         "step3": " est dans la zone ",
+         "step4": " depuis plus de "
+      },
+      "OUT_OF_NETWORK": {
+         "step1": "L'objet ",
+         "step2": " du groupe ",
+         "step3": " est hors des zones depuis plus de "
+      }
+   },
+   "tagState": {
+      "ALL": "Tous",
+      "INITIALIZED": "Initialisé",
+      "DEPLOYED": "Déployé",
+      "DEACTIVATED": "Désactivé",
+      "STORED": "Stocké"
+   },
+   "userRefactor": {
+      "title": "Données utilisateur",
+      "formCheck": {
+         "title": "Remplissez le mot de passe",
+         "username": "Nom d'utilisateur :",
+         "TTusername": "Nom que vous utilisez pour vous connecter",
+         "password": "Mot de passe :",
+         "TTpassword": "Minimum 4 caractères avec chiffre(s) et lettre(s)",
+         "PHpassword": "mot de passe",
+         "check": "Vérification",
+         "helper": "Mot de passe oublié ?",
+         "TThelper": "Récupérateur de mot de passe"
+
+      } ,
+      "formRefactor": {
+         "title": "Changez vos données",
+         "firstname": "Prénom :",
+         "TTfirstname": "Entre 4 et 45 caractères",
+         "lastname": "Nom de famille :",
+         "TTlastname": "Entre 4 et 45 caractères",
+         "newPassword": "Nouveau mot de passe :",
+         "TTnewPassword": "Minimum 4 caractères avec chiffre(s) et lettre(s)",
+         "PHnewPassword": "nouveau mot de passe",
+         "confirmPassword": "Confirmation du mot de passe :",
+         "TTconfirmPassword": "Minimum 4 caractères avec chiffre(s) et lettre(s)",
+         "PHconfirmPassword": "confirmation du mot de passe",
+         "passwordMatch": "Les deux mots de passe ne correspondent pas",
+         "mail": "Email :",
+         "TTmail": "Adresse email valide",
+         "PHmail": "mail@mail.com",
+         "Hmail": "Adresse email invalide",
+         "mobile": "Téléphone :",
+         "PHmobile": "01 02 03 04 05",
+         "TTmobile": "Numéro de téléphone correct",
+         "Hmobile": "Numéro de téléphone invalide",
+         "validate": "Validation",
+         "reset": "Réinitialisation",
+         "SelectLanguage": {
+            "en": {
+               "language": "English",
+               "key": "en",
+               "timezone": "Europe/London",
+               "keyUrl":"en_US"
+            },
+            "fr": {
+               "language": "Français",
+               "key": "fr",
+               "timezone": "Europe/Paris",
+               "keyUrl":"fr_FR"
+            }
+         },
+         "language":"Selectionnez votre langue :"
+
+      },
+      "alerts": {
+         "API": "Une erreur serveur s'est produite",
+         "success": "Vous avez mis à jour votre profil",
+         "invalid": "Certains champs sont invalides"
+      }
+   },
+   "sidebar":{
+      "zoom" : "Zoom",
+      "equipements" : "Voir dans le tableau du parc",
+      "thing": {
+         "dateLastPosition" : "Date de la dernière position connue",
+         "currentLocation": "Actuellement dans cette zone",
+         "at": "à",
+         "address" : "Adresse (ou coordonnées GPS)",
+         "noGpsPosition" : "Pas de position GPS disponible actuellement",
+         "noGpsPositionTitle" : "Le capteur n'a pas envoyé de message avec GPS depuis qu'il est attaché à cet objet.",
+         "tagTitle":"Informations capteur",
+         "activation": "Activation :",
+         "mac":"Addresse MAC :",
+         "lastPos": "Dernière position :",
+         "lastUpdate": "Dernière activité :",
+         "newProblems": "Nouveaux problèmes",
+         "characteristics": {
+            "title" : "Caractéristiques",
+            "headers" : "Type,Valeur"
+         },
+         "intervals":"Intervals",
+         "historic": "Historique",
+         "movements": {
+            "title" : "Mouvements",
+            "headers": {
+               "values" : "Zone,Entrée,Sortie,Durée",
+               "units"  : ",,,"
+            }
+         },
+         "travels": {
+            "title": "Trajets",
+            "headers": {
+               "values" : "Départ,Arrivée,Durée",
+               "units"  : ",,"
+            }
+         }
+      },
+      "location": {
+         "filters": {
+            "headers" : "Nom,Type"
+         },
+         "things": {
+            "headers" : "Nom,Groupe"
+         },
+         "thingsInside" : {
+            "title" : "Objets dans cette Zone",
+            "button": "Voir ces objets sur la carte"
+         }
+
+      }
+   },
+
+   "calendar": {
+      "thisDay": "Aujourd'hui",
+      "lastDay": "Hier",
+      "3LastDays": "3 derniers jours",
+      "7LastDays": "7 derniers jours",
+      "30LastDays": "30 derniers jours",
+      "validate": "Valider",
+      "customRange": "Dates personnalisées",
+      "cancel": "Annuler"
+   },
+
+   "time": {
+      "seconds" : "secondes",
+      "minutes" : "minutes",
+      "hours"   : "heures",
+      "days"    : "jours",
+      "months"  : "mois",
+      "years"   : "années"
+   },
+
+   "global" : {
+
+      "thing" : "objet",
+      "things" : "objets",
+      "location" : "zone",
+      "locations" : "zones",
+      "region" : "région",
+      "regions" : "régions",
+      "tag" : { "mac" :"Identifiant capteur" },
+      "thingGroup" : { "name" : "groupe d'objets" } ,
+      "characteristics" : { "value" : "caractéristiques"},
+      "characteristicType" : { "name" : "caractéristique type" },
+      "newProblems" : "nouveaux problèmes",
+      "filters" : { "name" : "filtre de zones" },
+      "filterType" : { "name" : "type de filtre de zones" },
+      "cookies": "Ce site utilise Google Analytics. En continuant à naviguer, vous nous autorisez à déposer un cookie à des fins de mesure d'audience.",
+      "currentLocation" :  { "name" : "Objets dans cette zone" }
+   }
+
+}
+

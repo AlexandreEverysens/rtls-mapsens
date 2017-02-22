@@ -5,10 +5,10 @@
 
 /**
  * @ngdoc service
- * @name rtlsApp.service:severityService
+ * @name rtlsMapsensApp.service:severityService
  * @description
  * # severityService
- * Service in the rtlsApp.
+ * Service in the rtlsMapsensApp.
  */
 angular.module('rtlsMapsensApp')
   .service('severityService', function () {

@@ -40,7 +40,7 @@ angular.module('rtlsMapsensApp')
             },
             stroke : function(thingId, index, disable){
               $('[class*="thing#'+thingId+';"]').filter('[class*="index_src#'+index+';"]').
-              attr({'stroke-width': disable ? 1 : 4})
+              attr({'stroke-width': disable ? 1 : 4});
             },
           },
           listen: function(){
@@ -57,7 +57,7 @@ angular.module('rtlsMapsensApp')
                 var modelName = _.get(args, 'modelName');
                 var type      = _.get(args, 'leafletEvent.type');
 
-                if( (type == 'mouseover' || type == 'mouseout') && layerName == 'history' &&
+                if( (type === 'mouseover' || type === 'mouseout') && layerName === 'history' &&
                   _.startsWith(modelName, 'marker_history')) {
 
                   $scope.Events.leaflet.markers.utils.stroke(
@@ -67,11 +67,11 @@ angular.module('rtlsMapsensApp')
                   );
                 }
 
-                if( (type == 'mouseover' || type == 'mouseout') &&
+                if( (type === 'mouseover' || type === 'mouseout') &&
                   (
-                    layerName == 'things'    ||
-                    layerName == 'locations' ||
-                    layerName == 'history'
+                    layerName === 'things'    ||
+                    layerName === 'locations' ||
+                    layerName === 'history'
                   ) &&
                   _.startsWith(modelName, 'marker')) {
 
@@ -95,11 +95,11 @@ angular.module('rtlsMapsensApp')
                     l.on(n, function (args) {
 
                       var type = _.get(args, 'type');
-                      if( (type == 'clustermouseover' || type == 'clustermouseout')) {
+                      if( (type === 'clustermouseover' || type === 'clustermouseout')) {
 
                         $scope.Events.leaflet.markers.utils.scale(
                           $(args.originalEvent.srcElement || args.originalEvent.originalTarget),
-                          (type == 'clustermouseover') ? 1.3 : null
+                          (type === 'clustermouseover') ? 1.3 : null
                         );
                       }
 

@@ -1,0 +1,92 @@
+
+<div class="container-fluid searchbox">
+
+  <div class="input-group">
+
+    <div class="input-box">
+
+      <input id          = "search-box-id"
+             type        = "text"
+             class       = "typeahead"
+             options     = "input.config.options"
+             datasets    = "input.config.data"
+             ng-model    = "input.config.model"
+             placeholder = "{{ 'map.searchbox.placeholder' | translate }}"
+             sf-typeahead>
+
+      <div class="spinner" ng-if="fuzzy.processing">
+        <i class="fa fa-circle-o-notch fa-spin fa-fw"></i>
+      </div>
+
+    </div>
+
+
+    <div class="input-group-btn right">
+
+      <div class="btn-group">
+        <button type="button"
+                class="btn btn-default dropdown-toggle options"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                uib-tooltip-html="'{{'map.searchbox.options' |translate}}'"
+                tooltip-placement="auto bottom">
+
+          <i class="fa fa-bars"></i>
+        </button>
+        <ul class="dropdown-menu">
+          <li>  <a class="show-problems" ng-click="showAllProblems()"
+                   styleX="cursor: pointer; font-size: 14px; font-weight: 500;">{{'map.sidebar.layerrows.buttons.checkboxHasProblem' | translate }}</a></li>
+        </ul>
+      </div>
+
+      <a class="btn layer" ng-click="layers.baselayers.toggle()"
+         uib-tooltip="{{'map.searchbox.'+layers.baselayers.current() |translate}}" tooltip-placement="auto bottom">
+        <i ng-class="(layers.baselayers.current() == 'streets') ? 'satellite' : 'streets'">
+        </i>
+      </a>
+
+      <a class="btn toggle" ng-click="searchbox.toggle()">
+        <i class="fa" ng-class="{'fa-caret-left': searchbox.show(), 'fa-caret-right': !searchbox.show(),}"></i>
+      </a>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="token-container container-fluid" ng-if="tokens.list().length" ng-class="{'hiding': !tokens.show()}">
+
+    <div class="wrap">
+
+      <div class="head input-group">
+
+        <div class="input-group-btn left">
+          <a class="btn trash" uib-tooltip-html="'{{'map.searchbox.bin'|translate}}'"
+             ng-click="trash.push()"><i class="trash"></i>
+          </a>
+          <a class="btn unzoom" uib-tooltip-html="'{{'map.searchbox.zoom'|translate}}'"
+             ng-click="tokens.unzoom()"><i class="fa fa-search-minus"></i>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="body">
+
+        <div ng-repeat="n in tokens.list()">
+
+          <div rtls-token token-id="{{n.id}}" token-type="{{n.type}}"></div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+</div>

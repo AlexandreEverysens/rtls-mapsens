@@ -1,0 +1,96 @@
+<!doctype html>
+<html ng-app="rtlsMapsensApp" class="state-map">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="bower_components/Leaflet.extra-markers/dist/css/leaflet.extra-markers.min.css" />
+    <link rel="stylesheet" href="bower_components/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="bower_components/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/states/map.css">
+    <link rel="stylesheet" href="styles/states/tab.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+
+  <body>
+
+    <main role="main" class="main">
+      <a href="http://localhost:9000/#/map" title="map">Map</a>
+
+      <div class="container-fluid">
+        <div ng-view></div>
+      </div>
+
+    </main>
+
+
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/leaflet/dist/leaflet-src.js"></script>
+    <script src="bower_components/Leaflet.extra-markers/dist/js/leaflet.extra-markers.min.js"></script>
+    <script src="bower_components/leaflet.markercluster/dist/leaflet.markercluster-src.js"></script>
+    <script src="bower_components/leaflet-polylinedecorator/leaflet.polylineDecorator.js"></script>
+    <script src="bower_components/angular-simple-logger/dist/angular-simple-logger.js"></script>
+    <script src="bower_components/everysens-ui-leaflet/dist/everysens-ui-leaflet.js"></script>
+    <script src="bower_components/lodash/lodash.js"></script>
+    <script src="bower_components/angular-translate/angular-translate.js"></script>
+    <script src="bower_components/angular-translate-handler-log/angular-translate-handler-log.js"></script>
+    <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/restangular/dist/restangular.js"></script>
+    <script src="bower_components/moment/min/moment-with-locales.min.js"></script>
+    <script src="bower_components/moment-timezone/builds/moment-timezone-with-data-2010-2020.js"></script>
+    <script src="bower_components/angular-moment/angular-moment.js"></script>
+    <script src="bower_components/logmatic-js/src/logmatic.js"></script>
+    <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/companyConfig.js"></script>
+
+    <!-- CONTROLLERS -->
+    <script src="scripts/controllers/mapController.js"></script>
+    <script src="scripts/controllers/partials/mapSearchBoxController.js"></script>
+    <script src="scripts/controllers/partials/mapSidebarController.js"></script>
+
+    <!-- SERVICES -->
+    <script src="scripts/services/exception.js"></script>
+    <script src="scripts/services/logDistantService.js"></script>
+
+    <script src="scripts/services/map/leafletService.js"></script>
+    <script src="scripts/services/map/markerService.js"></script>
+
+    <script src="scripts/services/logic/severityService.js"></script>
+
+    <script src="scripts/services/api/thingService.js"></script>
+    <script src="scripts/services/api/apiUtils.js"></script>
+    <script src="scripts/services/api/userService.js"></script>
+    <script src="scripts/services/api/locationService.js"></script>
+
+    <script src="scripts/services/searchbox/searchboxEngineService.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

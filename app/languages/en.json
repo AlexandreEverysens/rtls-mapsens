@@ -1,0 +1,489 @@
+{
+   "app" : {
+      "error" : {
+         "service" : "Service is temporarily unavailable."
+      }
+   },
+   "login" : {
+      "title": "Welcome.",
+      "subtitle": "Please login.",
+      "username": "Username",
+      "password": "Password",
+      "submit": "Login",
+      "error" : {
+         "username": "Username format is not valid.",
+         "password": "Password format is not valid.",
+         "mustLogin": "Please type a valid identifier"
+      }
+   },
+   "layout": {
+      "navbar": {
+         "title": "RTLS",
+         "menu": {
+            "home": "Dashboard",
+            "map": "Map",
+            "things": "Tracked things",
+            "locations": "Locations",
+            "tags": "Tags",
+            "stats": "Statistics",
+            "equipments": "Equipments"
+         },
+         "dropdown": {
+            "account":"Account",
+            "settings":"Settings",
+            "userprofile":"User profile",
+            "logout":"Log out"
+         }
+      },
+      "footerbar": {
+         "madewithlove": "<i class=\"fa fa-code\"></i> with care by <a href=\"http://www.everysens.com/\" class=\"footer-link\" target=\"_blank\">Everysens</a>"
+      }
+   },
+   "map": {
+      "controls": {
+         "fit": "Auto fit",
+         "layers": "Layers control"
+      },
+      "sidebar": {
+         "layerrows": {
+            "buttons": {
+               "filterspopup": "Filters",
+               "clearfilterspopup": "Reset filters",
+               "fit": "Fit map",
+               "checkboxHasProblem": "Show problems"
+            },
+            "things": "Things",
+            "locations": "Locations"
+         },
+         "bottombuttonbar": {
+            "ok": "OK"
+         },
+         "action": {
+            "search": "Search...",
+            "clear": "Clear",
+            "filter": "Filter"
+         },
+         "historic": "Historic interval"
+      },
+      "popup": {
+         "filters": "Filters",
+         "problems": "Problems",
+         "actions": "Actions",
+         "currently": "Currently in",
+         "lately": "Lately in",
+         "thing": {
+            "informations": "Informations",
+            "groups": "Groups",
+            "located": "Located",
+            "activity": "Activity",
+            "details": "View in table",
+            "historyShow": "View historic",
+            "historyHide": "Hide historic"
+         },
+         "location": {
+            "title": "Location"
+         }
+      },
+      "searchbox": {
+         "bin": "Empty all items",
+         "zoom": "Watch all items",
+         "streets": "Satellite view",
+         "satellite": "Street view",
+         "options": "Options",
+         "placeholder": "Search",
+         "message" :{
+            "noMatch": "Unable to find any match"
+         }
+      },
+      "errors": {
+      }
+   },
+   "things": {
+      "title": "Things",
+      "empty": "No things to display",
+      "withProblems" : "Things with problems",
+      "errors": {
+         "failedFetchingThings": "Téléchargement des objets impossible",
+         "failedfetchinglocations": "Téléchargement des zones impossible"
+      },
+      "table": {
+         "headers": {
+            "name": "Name",
+            "group": "Group",
+            "lastKnownPosition": "Last known position",
+            "lastSensorActivity": "Last activity",
+            "sensor": "Tag",
+            "location": "Location",
+            "problems": "Current problems",
+            "actions": "Actions"
+         },
+         "actions": "See on map",
+         "placeholders": {
+            "search": "Search..."
+         }
+      }
+   },
+   "locations": {
+      "title": "Locations",
+      "empty": "No location to display",
+      "withProblems" : "Locations with problems",
+      "errors": {
+         "failedFetchingLocations": "Failed fetching locations"
+      },
+      "table": {
+         "headers": {
+            "name": "Name",
+            "thingscount": "Things",
+            "filters": "Filters",
+            "problems": "Current problems",
+            "actions": "Actions"
+         },
+         "actions": "See on map",
+         "placeholders": {
+            "search": "Search..."
+         }
+      },
+      "map": {
+         "popup": {
+            "showRegions" : "Show regions",
+            "hideRegions" : "Hide regions",
+            "viewObjectsIn" : "View things in this location"
+         }
+      }
+   },
+   "tags": {
+      "title": "tags",
+      "empty": "No tag to display",
+      "errors": {
+         "failedFetchingTags": "Failed fetching tags"
+      },
+      "table": {
+         "headers": {
+            "id": "Identifier",
+            "state": "State",
+            "thing": "Thing",
+            "dateLastActivity": "Last activity",
+            "version": "Version",
+            "problems": "Current problems"
+         },
+         "placeholders": {
+            "search": "Search..."
+         }
+      },
+      "wakeReason": {
+         "title": "Message",
+         "UNKNOWN": "Unknown",
+         "LIFE": "Life",
+         "EVENT": "Event",
+         "BOOT": "Boot",
+         "LIFE_INIT": "Life init",
+         "EVENT_INIT": "Event init",
+         "GPS_OK": "GPS Ok",
+         "KEEP_ALIVE": "Keep alive",
+         "GPS_FAILED": "GPS Failed",
+         "GPS_OLD": "GPS Old",
+         "START": "Start",
+         "STOP": "Stop",
+         "MOVE": "Movement"
+      }
+   },
+   "dashboard": {
+      "RealTimeProblemsExplorer":"Real-time problems explorer",
+      "businessProblem": "Business problem",
+      "systemProblem": "System problem",
+      "tags": "Click here to get a list of your tags",
+      "things": "Click here to get the list of your things",
+      "locations": "Click here to get the list of your locations",
+      "problem": "problems",
+      "consult": "View",
+      "loss": "loos",
+      "unit": "Units",
+      "problemType": {
+         "RETENTION": "Retention",
+         "COUNTING": "Counting",
+         "UNAUTHORIZED_MOVEMENT": "Unauthorized movement",
+         "OUT_OF_NETWORK": "out of network",
+         "NO_DEVICE_SIGNAL": "No device signal",
+         "LOW_DEVICE_BATTERY": "Low device battery"
+      }
+   },
+   "equipment": {
+      "things": "Tracked things",
+      "locations": "Locations",
+      "tags": "Tags",
+      "back": "Back",
+      "modal": {
+         "title": "Problem(s) with ",
+         "description": "Description",
+         "type": "Problem",
+         "date": "Date",
+         "solved": "Solved",
+         "message": {
+            "step1": "A movement problem with object ",
+            "step2": " has been solved.",
+            "error": "A problem accured"
+         },
+         "buttons": {
+            "solve": "Solve",
+            "close": "Close"
+         }
+      },
+      "paging":{
+         "itemByPage": "Items by page :",
+         "numPage": "Sort in ",
+         "goTo": "Go to page :",
+         "all": "Show all"
+      },
+      "modalThingsInZone": {
+         "title": "Thing(s) in the location",
+         "thing": "Thing",
+         "thingGroup": "Group",
+         "clipboard": "Copy to clipboard"
+      }
+   },
+   "stat": {
+      "yAxis": "Number of problem(s)",
+      "filtred": "filtred by :",
+      "dayFilter": "Day",
+      "weekFilter": "Week",
+      "monthFilter": "Month",
+      "yearFilter": "Year",
+      "problem": "Problem(s)",
+      "modal": {
+         "title": "Details of problems between {{intervalStart}} and {{intervalEnd}}",
+         "type": "Problem",
+         "date": "Date",
+         "thing": "Object (group)",
+         "location": "Location",
+         "tag": "Tag",
+         "buttons": {
+            "close": "Close"
+         }
+      },
+      "errors": {
+         "details": "An error occured while loading problems"
+      }
+   },
+   "problemType": {
+      "RETENTION": "Retention",
+      "COUNTING": "Counting",
+      "UNAUTHORIZED_MOVEMENT": "Unauthorized movement",
+      "OUT_OF_NETWORK": "Out of network",
+      "NO_DEVICE_SIGNAL": "No device signal",
+      "LOW_DEVICE_BATTERY": "Low device battery"
+   },
+   "problem":{
+      "timeUnit": {
+         "MINUTES": " minutes ",
+         "HOURS":" hours ",
+         "DAYS":" days "
+      },
+      "NO_DEVICE_SIGNAL": {
+         "step1": "The sensor ",
+         "step2": " of the thing ",
+         "step3": " doesn't emit for "
+      },
+      "LOW_DEVICE_BATTERY": {
+         "step1": "The sensor ",
+         "step2": " of the thing ",
+         "step3": " is low in battery for"
+      },
+      "COUNTING":{
+         "GREATER_THAN":{
+            "step1": "There are more than ",
+            "step1bis": ""
+         },
+         "LOWER_THAN":{
+            "step1": "There are less than ",
+            "step1bis": ""
+         },
+         "EQUAL":{
+            "step1": "There are exactly ",
+            "step1bis": ""
+         },
+         "NOT_BETWEEN":{
+            "step1": "There aren't between ",
+            "step1bis": " and "
+         },
+         "NOT_EQUAL":{
+            "step1": "There aren't ",
+            "step1bis": ""
+         },
+         "step2": " things of the group ",
+         "step3": " in the location "
+      },
+      "UNAUTHORIZED_MOVEMENT": {
+         "step1": "The thing ",
+         "step2": " from group ",
+         "step3": " has moved on "
+      },
+      "RETENTION": {
+         "step1": "The thing ",
+         "step2": " from group ",
+         "step3": " is in location ",
+         "step4": " for more than "
+      },
+      "OUT_OF_NETWORK": {
+         "step1": "The thing ",
+         "step2": " from group ",
+         "step3": " is out of any locations for more than "
+      }
+   },
+   "tagState": {
+      "ALL": "All",
+      "INITIALIZED": "Initialized",
+      "DEPLOYED": "Deployed",
+      "DEACTIVATED": "Deactivated",
+      "STORED": "Stored"
+   },
+   "userRefactor": {
+      "title": "User's data",
+      "formCheck": {
+         "title": "Fill the password",
+         "username": "User name :",
+         "TTusername": "Name you use to log in",
+         "password": "Password :",
+         "TTpassword": "Minimum 4 characters including lettre(s) and number(s)",
+         "PHpassword": "password",
+         "check": "Check",
+         "helper": "Password forgotten ?",
+         "TThelper": "Password reminder or mail sender"
+
+      } ,
+      "formRefactor": {
+         "title": "Change your data",
+         "firstname": "First name :",
+         "TTfirstname": "Between 4 and 45 characters",
+         "lastname": "Last name :",
+         "TTlastname": "Between 4 and 45 characters",
+         "newPassword": "New password :",
+         "TTnewPassword": "Minimum 4 characters including letter(s) and number(s)",
+         "PHnewPassword": "new password",
+         "confirmPassword": "Password confirmation :",
+         "TTconfirmPassword": "Minimum 4 characters including letter(s) and number(s)",
+         "PHconfirmPassword": "password confirmation",
+         "passwordMatch": "The two passwords don't match",
+         "mail": "Mail :",
+         "TTmail": "Valid email",
+         "PHmail": "mail@mail.com",
+         "Hmail": "Wrong mail address",
+         "mobile": "Phone :",
+         "PHmobile": "01 02 03 04 05",
+         "TTmobile": "Correct phone number",
+         "Hmobile": "Wrong phone number",
+         "validate": "Validate",
+         "reset": "Reset",
+         "SelectLanguage": {
+            "en": {
+               "language": "English",
+               "key": "en",
+               "timezone": "Europe/London",
+               "keyUrl":"en_US"
+            },
+            "fr": {
+               "language": "Français",
+               "key": "fr",
+               "timezone": "Europe/Paris",
+               "keyUrl":"fr_FR"
+            }
+         },
+         "language":"Choose your language :"
+      },
+      "alerts": {
+         "API": "A server error happened",
+         "success": "Your account has been updated",
+         "invalid": "Some fields are invalids"
+      }
+   },
+   "sidebar":{
+
+      "zoom" : "Zoom",
+      "equipements" : "See in equipements table",
+      "thing": {
+         "dateLastPosition" : "Date of last know position",
+         "currentLocation": "Currently in this location",
+         "at": "at",
+         "address" : "Address (or GPS coordinates)",
+         "noGpsPosition" : "No GPS position available right now",
+         "noGpsPositionTitle" : "The sensor has not sent a message with a GPS value since it is attached to this thing.",
+         "tagTitle":"Tag informations",
+         "activation": "Activation :",
+         "mac":"MAC address :",
+         "lastPos": "Last position :",
+         "lastUpdate": "Last update:",
+         "newProblems": "New problems",
+         "characteristics": {
+            "title" : "Characteristics",
+            "headers" : "Type,Value"
+         },
+         "intervals":"Intervals",
+         "historic": "Historic",
+         "movements": {
+            "title" : "Movements",
+            "headers": {
+               "values" : "Location,Entering,Leaving,Duration",
+               "units"  : ",,,"
+            }
+         },
+         "travels": {
+            "title": "Travels",
+            "headers": {
+               "values" : "Departure,Arrival,Duration",
+               "units"  : ",,"
+            }
+         }
+      },
+      "location": {
+         "filters": {
+            "headers" : "Name,Type"
+         },
+         "things": {
+            "headers" : "Name,Group"
+         },
+         "thingsInside" : {
+            "title" : "Things in this Location",
+            "button": "See these things on map"
+         }
+      }
+   },
+
+   "calendar": {
+      "thisDay": "Today",
+      "lastDay": "Yesterday",
+      "3LastDays": "3 last days",
+      "7LastDays": "7 last days",
+      "30LastDays": "30 last days",
+      "validate": "Apply",
+      "customRange": "Custom dates",
+      "cancel": "Cancel"
+   },
+
+   "time": {
+      "seconds" : "seconds",
+      "minutes" : "minutes",
+      "hours"   : "hours",
+      "days"    : "days",
+      "months"  : "months",
+      "years"   : "years"
+   },
+
+   "global" : {
+
+      "thing" : "thing",
+      "things" : "things",
+      "location" : "location",
+      "locations" : "locations",
+      "region" : "region",
+      "regions" : "regions",
+      "tag" : { "mac" :"tag identifier" },
+      "thingGroup" : { "name" : "things group" } ,
+      "characteristics" : { "value" : "characteristics"},
+      "characteristicType" : { "name" : "characteristic type" },
+      "newProblems" : "new problems",
+      "filters" : { "name" : "locations filter" },
+      "filterType" : { "name" : "locations filter type" },
+      "cookies": "This website use Google Analytics. By navigating, you allow us to store a cookie for audience measurement purpose .",
+      "currentLocation" :  { "name" : "Objects in this location" }
+   }
+
+}

@@ -5,7 +5,7 @@
 
 /**
  * @ngdoc service
- * @name rtlsApp.map.marker
+ * @name rtlsMapsensApp.map.marker
  */
 angular.module('rtlsMapsensApp')
 

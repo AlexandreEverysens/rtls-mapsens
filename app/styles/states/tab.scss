@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+@import "variables";
+@import "mixins";
+
+html.state-tab, html[class*="state-tab."] {
+   .table-title {
+      margin-top: 0 !important;
+   }
+}

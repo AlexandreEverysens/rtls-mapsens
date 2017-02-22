@@ -17,7 +17,18 @@
     "leaflet-polylinedecorator": "1.0.1",
     "angular-simple-logger": "0.1.7",
     "everysens-ui-leaflet": "1.0.3",
-    "lodash": "4.14.1"
+    "lodash": "4.14.1",
+    "angular-translate": "2.11.1",
+    "angular-translate-handler-log": "2.11.1",
+    "angular-translate-loader-static-files": "2.11.1",
+    "angular-ui-router": "0.2.18",
+    "restangular": "1.5.2",
+    "moment": "2.14.1",
+    "moment-timezone": "0.5.4",
+    "angular-moment": "1.0.1",
+    "logmatic-js": "0.0.13",
+    "components-font-awesome": "4.5.0",
+    "bootstrap-sass": "3.3.6"
   },
   "devDependencies": {
     "angular-mocks": "^1.4.0"
@@ -37,10 +48,18 @@
         "dist/css/leaflet.extra-markers.min.css",
         "dist/js/leaflet.extra-markers.min.js"
       ]
+    },
+    "moment": {
+      "main": [
+        "min/moment-with-locales.min.js"
+      ]
     }
   },
   "resolutions": {
     "angular": "1.5.7",
-    "leaflet": "1.0.0-beta.2"
+    "leaflet": "1.0.0-beta.2",
+    "angular-translate": "2.11.0",
+    "moment": "2.14.1",
+    "bootstrap": "3.3.7"
   }
 }

@@ -1,0 +1,448 @@
+@charset "UTF-8";
+
+@import "variables";
+@import "mixins";
+
+
+
+.ranges ul li {
+   padding:5px 9px;
+   border: 1px solid #ddd !important;
+   background-color: #f9f9f9!important;
+   color: #3c3c3c!important;
+   border-radius: 0 !important;
+   &:hover{
+      background-color: #ededed!important;
+   }
+   &.active {
+      background-color: #08C!important;
+      color: #fff!important;
+   }
+}
+
+
+.calendar {
+
+   input.date-picker {
+      box-shadow: 0 0 0;
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
+      /*border-bottom: 1px;*/
+      font-size: 14px;
+      padding: 0 0 0 0;
+      margin-left: 8px;
+   }
+
+   .daterangepicker .input-mini {
+      border-radius: 0!important;
+   }
+
+   .slideable_content {
+      width : 300px;
+   }
+
+   .icon {
+      background-color: transparent;
+      border: 0;
+   }
+}
+
+
+
+.map__sidebar {
+
+   position: absolute;
+   background: white;
+   z-index: 1003;
+   width: 492px;
+   top: 58px;
+   left: 4px;
+   box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.2);
+   border-radius: 3px;
+
+   @media (max-width: $screen-xs-max) {
+      width: 98%;
+   }
+
+   transform-origin: 0 0;
+   transform: translateX(-15%) scale(0.1);
+   transition: transform 0.25s;
+
+   &._open {
+      transform: translateX(0);
+      transition: transform .4s;
+   }
+
+
+   .wrap {
+      padding: 4px;
+      margin-right: 6px; /* area for overflow vertical bar */
+   }
+
+
+
+   [thing-directive], [location-directive] {
+
+      div.separator {
+         padding: 4px;
+      }
+      div.separator2 {
+         border: 0;
+         height: 2px;
+         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05), rgb(101, 155, 224), rgba(0, 0, 0, 0.05));
+         margin-bottom: 10px;
+         margin-top: 16px;
+      }
+
+      .btn {
+
+         &.details {
+            width: 50px;
+            height: 36px;
+            position: relative;
+            margin-left: 10px;
+            background-color: white;
+            border-radius: 4px;
+         }
+
+      }
+
+      .head-panel {
+
+         margin-top: 2px;
+         margin-bottom: 6px;
+
+         .features > .correct-padding {
+            border: 1px solid #e2e2e2;
+            border-radius: 4px;
+         }
+
+         .btn {
+            background-color: transparent;
+            padding: 0px 0px;
+            border-radius: 3px;
+            border: 0px solid black;
+            width: 36px;
+            height: 36px;
+            font-size: 18px;
+         }
+
+         .btn._close {
+            float: right;
+            font-size: 24px;
+            border: 0;
+         }
+         .btn.zoom {
+
+         }
+         .btn.equipement i.fa {
+            padding-top: 8px;
+            -moz-transform: scale(-1, 1);
+            -webkit-transform: scale(-1, 1);
+            -o-transform: scale(-1, 1);
+            -ms-transform: scale(-1, 1);
+            transform: scale(-1, 1);
+         }
+         .btn.refresh {
+
+         }
+         .btn.ban {
+            i.fa-map-o {
+               color: #adadad;
+            }
+            i.fa-ban {
+            }
+         }
+
+      }
+
+      .great-panel {
+         background-color: #659be0;
+         color: white;
+         padding: 4px;
+         border-radius: 3px;
+
+         .name-icon {
+            display: inline-block;
+            font-size: 16px;
+            width: 16px;
+            margin-left: 2px;
+         }
+         .name-text {
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 8px;
+         }
+         .dateLastPosition, .thingGroup, .coords {
+            font-size: 12px;
+            margin-left: 0px;
+            margin-bottom: 2px;
+            i {
+               font-size: 10px;
+               margin-right: 6px;
+            }
+            .at {
+                margin-left: 3px;
+                margin-right: 3px;
+             }
+            .noGpsPosition{
+               color: $dark-red;
+            }
+         }
+         .coords a {
+            color: white;
+         }
+
+      }
+
+      .misc-panel {
+         margin-top: 10px;
+         padding-right: 4px; /* to not touch the scrollbar when appears */
+         max-height: 400px;
+         overflow-y: auto;
+         overflow-x: hidden;
+
+         &::-webkit-scrollbar {
+            width: 4px;
+            height: 16px;
+         }
+         &::-webkit-scrollbar-thumb {
+            background: #659be0;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+         }
+         &::-webkit-scrollbar-track {
+            background: #e9e9e9;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+         }
+      }
+
+
+
+      .entry-expand {
+
+         ._table {
+
+            display: table;
+            width: 100%;
+
+            .head {
+               color: #b8b8b8;
+            }
+            ._table-row {
+               display: table-row;
+            }
+            ._table-cell, ._table-head {
+               display: table-cell;
+               /*padding: 6px 10px 2px 0px;*/
+               /*border: 1px solid #999999;*/
+            }
+            ._table-head {
+               font-weight: bold;
+            }
+         }
+
+
+         div.header {
+
+            outline: none;
+            border-bottom: solid #d9d9d9  1px;
+            padding-bottom: 5px;
+            margin-bottom: 6px;
+
+            .text {
+               outline: none;
+               font-size: 14px;
+               display:inline-block;
+            }
+            span.text:first-letter {
+               text-transform: uppercase;
+            }
+            .badge.number {
+               position: relative;
+               top: -8px;
+               margin-left: 2px;
+               &.badge--NONE {
+                  background-color: #659be0;
+               }
+            }
+            a.btn.trigger {
+               float: right;
+               top: -2px;
+               position: relative;
+               font-size: 11px;
+            }
+
+            i.fa.inner {
+               font-size: 18px;
+            }
+            i.fa.fa-caret-down {
+               font-size: 18px;
+               margin-right: 3px;
+            }
+            i.fa.fa-calendar {
+               font-size: 18px;
+               position: relative;
+               top: -3px;
+            }
+            i.fa.fa-map-o {
+               font-size: 14px;
+               position: relative;
+               top: 0px;
+            }
+            i.fa.fa-map-marker {
+               margin-right:3px;
+            }
+         }
+
+         .btn {
+            color: #696969;
+         }
+         .btn:active, .btn.active {
+            box-shadow: none;
+         }
+         .btn:hover, .btn:focus, .btn.focus {
+            color: #232323;
+            text-decoration: none;
+         }
+
+
+         div.data {
+            &._open {
+               margin-bottom: 10px;
+            }
+         }
+
+         &.tagInfos {
+            .lbl {
+               font-size: 12px;
+               margin-right: 6px;
+            }
+         }
+
+         [new-problems-directive] ._table {
+            .head {
+               display: none;
+            }
+            .body {
+               ._table-call {
+               }
+               ._table-cell .icon {
+                  padding: 6px 0px 2px 8px;
+               }
+               ._table-cell .date {
+                  font-size: 12px;
+               }
+            }
+         }
+
+         [characteristics-directive] ._table {
+            .head {
+               ._table-head {
+                  font-size: 12px;
+                  font-style: italic;
+               }
+               ._table-head:first-child{
+                  padding-left: 4px;
+               }
+            }
+            .body {
+               ._table-cell .name {
+                  padding-left: 4px;
+                  width: 50%;
+               }
+            }
+         }
+
+
+         &.movements .export-csv,
+         &.travels   .export-csv {
+            font-size: 20px;
+            float: right;
+            padding: 0px 5px 0px 5px;
+            /* border: 1px solid; */
+            top: -3px;
+            position: relative;
+         }
+
+         [movements-directive] ._table {
+            .head {
+               ._table-head {
+                  padding-left: 0px;
+                  font-size: 12px;
+                  font-style: italic;
+               }
+               .unit {
+                  font-size: 10px;
+                  font-style: italic;
+                  &:before { content: '('; }
+                  &:after  { content: ')'; }
+               }
+            }
+            .body {
+               ._table-cell {
+                  padding: 2px 0px 2px 0px;
+                  font-size: 12px;
+               }
+            }
+         }
+
+         [travels-directive] ._table {
+            .head {
+               ._table-head {
+                  padding-left: 0px;
+                  font-size: 12px;
+                  font-style: italic;
+               }
+               .unit {
+                  font-size: 10px;
+                  font-style: italic;
+                  &:before { content: '('; }
+                  &:after  { content: ')'; }
+               }
+            }
+            .body {
+               ._table-cell {
+                  font-size: 12px;
+                  padding: 2px 0px 4px 0px;
+               }
+             }
+         }
+
+         [filters-directive] ._table {
+            .head {
+               ._table-head {
+                  font-size: 12px;
+                  font-style: italic;
+               }
+            }
+            .body {
+               ._table-cell .name {
+               }
+            }
+         }
+
+         [things-in-location-directive] ._table {
+            .head {
+               ._table-head {
+                  font-size: 12px;
+                  font-style: italic;
+               }
+            }
+            .body {
+               ._table-cell .name {
+               }
+            }
+         }
+
+
+      }
+
+   }
+
+}
+
+

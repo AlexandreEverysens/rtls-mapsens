@@ -1,0 +1,15 @@
+<div ng-controller="MapSidebarCtrl" class="container-fluid  map__sidebar" ng-class="classes">
+
+  <div class="wrap">
+
+    <div ng-repeat="n in container" ng-if="n.type == 'thing'">
+      <div thing-directive thingId="{{ n.id }}"></div>
+    </div>
+
+    <div ng-repeat="n in container" ng-if="n.type == 'location'">
+      <div location-directive locationId="{{ n.id }}"></div>
+    </div>
+
+  </div>
+
+</div>
