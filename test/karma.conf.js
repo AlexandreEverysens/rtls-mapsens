@@ -38,7 +38,6 @@ module.exports = function(config) {
       'bower_components/everysens-ui-leaflet/dist/everysens-ui-leaflet.js',
       'bower_components/lodash/lodash.js',
       'bower_components/angular-translate/angular-translate.js',
-      'bower_components/angular-translate-handler-log/angular-translate-handler-log.js',
       'bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js',
       'bower_components/angular-ui-router/release/angular-ui-router.js',
       'bower_components/restangular/dist/restangular.js',

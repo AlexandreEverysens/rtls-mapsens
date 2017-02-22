@@ -16,8 +16,7 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/states/map.css">
-    <link rel="stylesheet" href="styles/states/tab.css">
+    <link rel="stylesheet" href="styles/map.css">
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
@@ -25,7 +24,7 @@
   <body>
 
     <main role="main" class="main">
-      <a href="http://localhost:9000/#/map" title="map">Map</a>
+      <a href="http://localhost:9000/#/map" class="btn btn-primary" style="margin-left: 40px;margin-bottom: 10px;">Link to Map</a>
 
       <div class="container-fluid">
         <div ng-view></div>
@@ -55,7 +54,6 @@
     <script src="bower_components/everysens-ui-leaflet/dist/everysens-ui-leaflet.js"></script>
     <script src="bower_components/lodash/lodash.js"></script>
     <script src="bower_components/angular-translate/angular-translate.js"></script>
-    <script src="bower_components/angular-translate-handler-log/angular-translate-handler-log.js"></script>
     <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
     <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="bower_components/restangular/dist/restangular.js"></script>

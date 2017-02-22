@@ -1,9 +1,6 @@
 @charset "UTF-8";
 
 @import "variables";
-@import "mixins";
-
-
 
 .icon-btn-region {
 
@@ -11,10 +8,10 @@
    padding: 6px 26px 7px 0px;
    background-repeat: no-repeat;
    &--show {
-      background-image: url(../../images/map/region_show.png);
+      background-image: url(../images/map/region_show.png);
    }
    &--hide {
-      background-image: url(../../images/map/region_hide.png);
+      background-image: url(../images/map/region_hide.png);
    }
 }
 
@@ -24,10 +21,10 @@
    padding: 6px 26px 7px 0px;
    background-repeat: no-repeat;
    &--show {
-      background-image: url(../../images/map/historic_show.png);
+      background-image: url(../images/map/historic_show.png);
    }
    &--hide {
-      background-image: url(../../images/map/historic_hide.png);
+      background-image: url(../images/map/historic_hide.png);
    }
 }
 
@@ -36,7 +33,7 @@
    background-size: 25px 25px;
    padding: 4px 26px 7px 0px;
    background-repeat: no-repeat;
-   background-image: url(../../images/map/details_show.png);
+   background-image: url(../images/map/details_show.png);
 }
 
 
@@ -172,20 +169,20 @@ html.state-map {
             background-size: 25px 25px;
             padding: 5px 23px 3px 0px;
             background-repeat: no-repeat;
-            background-image: url(../../images/map/trash_empty.png);
+            background-image: url(../images/map/trash_empty.png);
          }
 
          i.satellite {
             background-size: 30px 30px;
             padding: 1px 31px 5px 0px;
             background-repeat: no-repeat;
-            background-image: url(../../images/map/satellite.png);
+            background-image: url(../images/map/satellite.png);
          }
          i.streets {
             background-size: 25px 34px;
             padding: 8px 31px 4px 0px;
             background-repeat: no-repeat;
-            background-image: url(../../images/map/road2.png);
+            background-image: url(../images/map/road2.png);
          }
 
 
